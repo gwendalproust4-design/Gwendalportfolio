@@ -83,15 +83,14 @@ const App = () => {
         >
           <GlassContainer className="p-8 md:p-10 flex flex-col items-start">
 
-            {/* Photo Profil (Celle du CV) */}
+            {/* Photo Profil */}
             <div className="relative w-32 h-32 mb-8 rounded-[2rem] p-1 bg-gradient-to-b from-white/10 to-transparent border border-white/20 shadow-inner overflow-hidden group">
               <div className="w-full h-full rounded-[1.8rem] overflow-hidden relative z-10 bg-gray-900">
-                {/* Mets ta photo ici (ex: /profile.jpg dans le dossier public) */}
                 <img
                   src="/profile.jpg"
                   alt="Gwendal Loichot-Proust"
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105"
-                  onError={(e) => { e.target.src = "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=300&auto=format&fit=crop"; }} // Fallback
+                  onError={(e) => { e.target.src = "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=300&auto=format&fit=crop"; }}
                 />
               </div>
             </div>
@@ -108,11 +107,23 @@ const App = () => {
               Étudiant en Bachelor Full-Stack. Je conçois des interfaces modernes et performantes en mêlant technique et créativité.
             </p>
 
-            {/* Liens Sociaux */}
+            {/* Liens Sociaux MIS À JOUR */}
             <div className="flex gap-3 mt-8 mb-8">
-              <SocialButton icon={<Github size={18} />} label="GitHub" href="https://github.com" />
-              <SocialButton icon={<Linkedin size={18} />} label="LinkedIn" href="https://linkedin.com" />
-              <SocialButton icon={<Mail size={18} />} label="Email" href="mailto:gwendalproust4@gmail.com" />
+              <SocialButton
+                icon={<Github size={18} />}
+                label="GitHub"
+                href="https://github.com/gwendalproust4-design"
+              />
+              <SocialButton
+                icon={<Linkedin size={18} />}
+                label="LinkedIn"
+                href="https://www.linkedin.com/in/gwendal-loichot-proust-35922a332/"
+              />
+              <SocialButton
+                icon={<Mail size={18} />}
+                label="Email"
+                href="mailto:gwendalproust4@gmail.com"
+              />
             </div>
 
             {/* Zone de Téléchargement */}
