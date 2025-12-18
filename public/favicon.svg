@@ -1,0 +1,16 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+  
+  <rect x="0" y="0" width="64" height="64" rx="22" fill="#0a0a0a"/>
+  
+  <rect x="2" y="2" width="60" height="60" rx="20" fill="url(#glass)"/>
+  
+  <rect x="2" y="2" width="60" height="60" rx="20" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.2"/>
+  
+  <text x="32" y="43" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="800" text-anchor="middle" fill="#ffffff">G</text>
+</svg>
